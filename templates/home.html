@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Fare Prediction</title>  
+    
+    <style>
+        
+     input[type=datetime-local] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+        
+    input[type=text] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+     input[type=number] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+        
+    input[type=submit] {
+      background-color: #8585ad;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    </style>
+</head>
+
+<body>    
+    <!-- As a heading -->
+    <h2 align='center'><a href="/">NEW YORK CITY TAXI FARE PREDICTOR</a></h2> 
+    
+    <div class="container", align='center', style="border-radius: 5px; background-color: #f2f2f2; padding: 20px;">
+        <form action="\predict" method="post">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Pickup Date and Time</h4>
+                            <!-- Pickup Time and Date -->
+                            <input type="datetime-local" name="Pickup_Date_Time" id="Pickup_Date_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Pickup Location -->
+                            <h4 class="card-title">Your Pickup here (Enter pickup within New York City)</h4>
+                            <input type="text" name="Pickup_location" id="Pickup_location" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Pickup Location -->
+                            <h4 class="card-title">Your Destination here (Enter destination within New York City)</h4>
+                            <input type="text" name="Destination_location" id="Destination_location" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Number of passengers (Maximum Seating Capacity is 6)</h4>
+                            <!-- Total Number of passengers -->
+                            <input type="number" name="Passenger_count" id="Passenger_count" required="required", min="0", max="6">
+                        </div>
+                    </div>
+                </div>
+            <!-- Submit -->
+            <input type="submit" value="Check Fare" class="btn btn-secondary">
+                
+        </form>
+
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <p align='center'>©2021 Anita Mohanty</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    background-image: url("header.png");
+    text-align: center;
+}
+
+a {
+    color: #f1f9f9;
+}
+
+a:hover {
+    color: #f0f0f0;
+  }
