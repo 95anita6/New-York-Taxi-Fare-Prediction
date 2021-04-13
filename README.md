@@ -1,6 +1,6 @@
 # New-York-Taxi-Fare-Prediction
 
-This is a machine learning project to predict the taxi fare given the pick up date, pick up location, drop off location and the number of passengers travelling. A fare is a fee paid by the passenger when one uses a public transport which differs from place to place. It is always good to know an estimate of the price one has to pay before the ride.
+This is a machine learning project to predict the taxi fare given the pick up date, pick up location, drop off location and the number of passengers travelling. A fare is a fee paid by the passenger when one uses a public transport which differs from place to place. It is easier to know an estimate of the price one has to pay before the ride.
 
 ## Data collection:
 The data for this project was collected from Kaggle. Here's the link : https://www.kaggle.com/dansbecker/new-york-city-taxi-fare-prediction.
