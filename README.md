@@ -47,7 +47,7 @@ After calculating distance features 'pickup_longitude', 'pickup_latitude', 'drop
 The pickup date time features was used by extracting year, month, weekday and hour from it. The original features was dropped after extraction of relevant information. 
 
 All of the variables were used for model training and building as they seem important for predicting the target variable. The performance metrics Mean absolute error was not good when some choosen variables were used for training.
-LinearRegression, DecisionTreeRegressor, XGBRegressor and RandomForestRegressor models were trained with the data. XGB model performed better as compared to the other models. It had the lowest variance amongst the other models.
+LinearRegression, DecisionTreeRegressor, XGBRegressor and RandomForestRegressor models were trained with the data. XGB model performed better as compared to the other models. It had the lowest variance amongst the other models. The mean absolute error for XGB model was 2.12.
 
 ## Application:
 The XGB model was saved as a pickle file to be used later. Flask was used to develop the API.
