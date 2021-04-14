@@ -55,5 +55,4 @@ The application asks the user to enter the pickup date time, pick up and drop lo
 Using the information provided by the user, it predicts the estimated Taxi Fare.
 
 This application was deployed to Microsoft Azure. 
-Check out the application here : 
 
